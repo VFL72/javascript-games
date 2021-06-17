@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="main.js"></script>
+        <link rel="stylesheet" href="../../style.css">
+
+        <title>Rock Paper Scissors</title>
+    </head>
+    <body>
+        <div class = "topnav">
+            <a href = "../../index.html"><h3>Home</h3></a>
+            <a href = "../guess-the-number/index.html"><h3>High-Low</h3></a>
+            <a href = "index.html" class = "active"><h3>Rock-Paper-Scissors</h3></a>
+        </div>
+
+        <br><br>
+        
+        <form id="form" onsubmit="return false">
+            <select name="dropdown" id="userChoice">
+                <option value = "" disabled selected hidden>Choice</option>
+                <option value="Rock" id="rock">Rock</option>
+                <option value="Paper" id="paper">Paper</option>
+                <option value="Scissors" id="scissors">Scissors</option>
+            </select>
+            <br>
+            <select name="dropdown" id="difficulty">
+                <option value = "" disabled selected hidden>Difficulty</option>
+                <option value="beginner" id="beginner">Beginner</option>
+                <option value="intermediate" id="intermediate">Intermediate</option>
+                <option value="hard" id="hard">Hard</option>
+            </select>
+            <br>
+            <input type="submit" onclick="determineWinner()">
+        </form>
+        <br><br><br>
+        <table>
+            <tr>
+                <td>User Score:</td>
+                <td>CPU Score:</td>
+                <td>Ties:</td>
+            </tr>
+            <tr>
+                <td id="userScore">0</td>
+                <td id="computerScore">0</td>
+                <td id="ties">0</td>
+            </tr>
+        </table>
+    </body>
+</html>

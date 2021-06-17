@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel = "stylesheet" href = "../../style.css">
+        <script src = "main.js"></script>
+
+        <title>High-Low Game</title>
+    </head>
+    <body>
+        <div class = "topnav">
+            <a href = "../../index.html"><h3>Home</h3></a>
+            <a href = "index.html" class = "active"><h3>High-Low</h3></a>
+            <a href = "../rock-paper-scissors/index.html"><h3>Rock-Paper-Scissors</h3></a>
+        </div>
+
+        <br><br>
+        
+        <form onsubmit = "return false" id = "guessForm">
+            <p1>Guess:</p1>
+            <input type = "number" id = "userGuess">
+            <br><br>
+            <input type = "submit" onclick = "highLow()">
+        </form>
+
+        <br>
+
+        <table>
+            <tr>
+                <th colspan = "2">Statistics</th>
+            </tr>
+            <tr>
+                <td>Guesses</td>
+                <td id = "guessCount">0</td>
+            </tr>
+            <tr>
+                <td>Remaining</td>
+                <td id = "remainingGuesses">7</td>
+            </tr>
+        </table>
+
+        <br>
+
+        <p1 id = "test">The computer randomly selected a number between 0 and 100. You have 7 guesses to figure it out.</p1>
+    </body>
+</html>
